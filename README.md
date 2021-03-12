@@ -72,7 +72,6 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * memdel
 * memmove
 * memset
-
 * calloc
 
 ### Convert number
