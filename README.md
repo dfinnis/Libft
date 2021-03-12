@@ -17,7 +17,7 @@ First clone this repo.
 
 Make to compile.
 
-```make; make clean```
+```make```
 
 Include *inc/libft.h* at the top of a C file, then you can use any of the libft functions.
 
