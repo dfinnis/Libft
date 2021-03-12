@@ -133,8 +133,8 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **strrev** - Reverse string.
 * **strndup** - Duplicate *n* bytes of string.
 * **strlcpy** - Copy a string.
-* **tolower** - Convert case to lower
-* **toupper** - Convert case to upper
+* **tolower** - Convert case to lower.
+* **toupper** - Convert case to upper.
 * **split_whitespaces** - Split a string using whitespace as delimiter, return as list.
 
 ### Free
