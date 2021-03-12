@@ -59,23 +59,11 @@ Compile *pseudo_cat* with ft_printf/libftprintf.a includes.
 
 ## Functions
 
+See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for more details.
+
+### Memory
 
 bzero
-
-isalnum
-isalpha
-isascii
-isdigit
-isprint
-
-atoi
-atoi_intmax
-
-itoa
-itoa_intmax
-itoa_unsigned
-itoa_base
-
 memalloc
 memccpy
 memchr
@@ -85,6 +73,22 @@ memdel
 memmove
 memset
 
+calloc
+
+### Convert number
+
+atoi
+atoi_intmax
+
+itoa
+itoa_intmax
+itoa_unsigned
+itoa_base
+
+sqrt
+
+### Put
+
 putchar
 putchar_fd
 putendl
@@ -93,6 +97,17 @@ putnbr
 putnbr_fd
 putstr
 putstr_fd
+
+### Character is
+
+isascii
+isalpha
+isdigit
+isalnum
+isprint
+isblank
+
+### String
 
 strcat
 strchr
@@ -120,9 +135,26 @@ strsplit
 strstr
 strsub
 strtrim
+strrev
+strndup
+strlcpy
 
 tolower
 toupper
+
+split_whitespaces
+
+## Free
+
+freestr
+strjoinfree
+strjoinfree_s1
+strjoinfree_s2
+
+2d_int_free
+2d_char_free
+
+### List
 
 lstnew
 lstdelone
@@ -134,27 +166,14 @@ lstmap
 listlen_int
 listlen_char
 
+### Swap
+
 swap
-strrev
-strndup
-strlcpy
-strjoinfree
-strjoinfree_s1
-strjoinfree_s2
-
-freestr
-2d_int_free
-2d_char_free
-
-isblank
-split_whitespaces
-
-sqrt
 
 swap_endian
 swap_endian64
 
-calloc
+### Further projects
 
 get_next_line
 
@@ -165,4 +184,4 @@ ft_dprintf
 ## Rigor
 
 Like all 42 projects in C, this project must conform to the 42 Norm.
-No leaks, errors handled carefully, & no quitting in an unexpected manner (seg fault, bus error, double free, etc.).
+No leaks, errors handled carefully, & no unexpected quitting (seg fault, bus error, double free, etc.).
