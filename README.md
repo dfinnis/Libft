@@ -19,7 +19,7 @@ Make to compile.
 
 ```make; make clean```
 
-Include *ft_printf/ft_printf.h* at the top of a C file, then you can use any of the libft functions.
+Include *libft.h* at the top of a C file, then you can use any of the libft functions.
 
 ### Example
 
