@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   binary.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/07 11:02:22 by dfinnis           #+#    #+#             */
-/*   Updated: 2019/01/07 11:02:29 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/18 11:34:54 by svaskeli          #+#    #+#             */
+/*   Updated: 2018/12/18 11:42:29 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_binary(t_print *all, va_list ap)
 {
-	size_t	i;
+	uintmax_t	num;
+	char		*num_str;
 
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+	num = ft_unsigned_len(all, ap);
+	if (!(num_str = ft_itoa_base(num, 2, all->type)))
+		ft_error(NULL, all->form);
+	ft_justify(num_str, all);
 }

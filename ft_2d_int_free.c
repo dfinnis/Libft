@@ -1,38 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_2d_int_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 15:21:03 by dfinnis           #+#    #+#             */
-/*   Updated: 2018/11/05 15:21:06 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/01 14:43:51 by dfinnis           #+#    #+#             */
+/*   Updated: 2018/12/01 14:43:52 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	ft_2d_int_free(int **array)
 {
-	long	a;
-	int		i;
-	int		n;
+	int i;
 
-	a = 0;
 	i = 0;
-	n = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-	|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			n = -1;
-		i++;
-	}
-	if (str[i] < '0' || str[i] > '9')
-		return (0);
-	while (str[i] >= '0' && str[i] <= '9')
-		a = (a * 10) + (str[i++] - '0');
-	return (a * n);
+	while (array[i])
+		free(array[i++]);
+	free(array);
 }

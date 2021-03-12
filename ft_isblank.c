@@ -1,38 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isblank.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 15:21:03 by dfinnis           #+#    #+#             */
-/*   Updated: 2018/11/05 15:21:06 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/30 12:31:26 by dfinnis           #+#    #+#             */
+/*   Updated: 2018/12/30 12:31:27 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int	ft_isblank(int c)
 {
-	long	a;
-	int		i;
-	int		n;
-
-	a = 0;
-	i = 0;
-	n = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-	|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			n = -1;
-		i++;
-	}
-	if (str[i] < '0' || str[i] > '9')
+	if (!c)
 		return (0);
-	while (str[i] >= '0' && str[i] <= '9')
-		a = (a * 10) + (str[i++] - '0');
-	return (a * n);
+	return (c == ' ' || (c >= 9 && c <= 13));
 }

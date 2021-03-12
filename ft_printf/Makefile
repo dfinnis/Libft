@@ -5,14 +5,33 @@
 #                                                     +:+ +:+         +:+      #
 #    By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/01/02 12:00:54 by dfinnis           #+#    #+#              #
-#    Updated: 2020/01/02 12:01:02 by dfinnis          ###   ########.fr        #
+#    Created: 2019/01/07 10:44:29 by dfinnis           #+#    #+#              #
+#    Updated: 2019/01/09 18:45:40 by svaskeli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = libftprintf.a
 
-SRCS = ft_atoi.c \
+SRCS = ft_printf.c \
+	   ft_dprintf.c \
+	   initialize.c \
+	   parse_flags_width.c \
+	   parse_precision.c \
+	   parse_length.c \
+	   parse_type.c \
+	   read_numbers.c \
+	   read_floats.c \
+	   read_others.c \
+	   build_precision.c \
+	   build_width.c \
+	   build_prefix.c \
+	   build_float.c \
+	   error_protection.c \
+	   binary.c
+
+LIB_DIR = ../
+
+LIB_C = ft_atoi.c \
 		ft_atoi_intmax.c \
 		ft_bzero.c \
 		ft_isalnum.c \
@@ -94,33 +113,45 @@ SRCS = ft_atoi.c \
 		swap_endian.c
 
 OBJ = $(SRCS:.c=.o)
-
-INC = libft.h
+LIB_O = $(LIB_C:.c=.o)
+LIB_PATH = $(addprefix $(LIB_DIR), $(LIB_O))
 
 G = -g
 FSAN = -fsanitize=address $(G)
 FLAGS = -Wall -Werror -Wextra
 
-all: $(NAME)
+INC = ft_printf.h
+
+all: lib $(NAME)
 
 fsanitize:
+	@make -C ../ fsanitize
 	@gcc -c $(FLAGS) $(FSAN) $(SRCS)
-	@ar rc $(NAME) $(OBJ)
+	@ar rc $(NAME) $(OBJ) $(LIB_PATH)
 	@ranlib $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
+	@ar rc $(NAME) $(OBJ) $(LIB_PATH)
 	@ranlib $(NAME)
 
 $(OBJ): $(SRCS) $(INC)
 	@gcc -c $(FLAGS) $(G) $(SRCS)
 
-clean:
+lib:
+	@make -C ../ all
+
+libfclean:
+	@make -C ../ fclean
+
+libclean:
+	@make -C ../ clean
+
+clean: libclean
 	@/bin/rm -f $(OBJ)
 
-fclean: clean
+fclean: clean libfclean
 	@/bin/rm -f $(NAME)
 
 re: fclean all
 
-.PHONY : all clean fclean re fsanitize
+.PHONY : all lib libfclean libclean clean fclean re fsanitize

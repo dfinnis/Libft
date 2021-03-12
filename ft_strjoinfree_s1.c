@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strjoinfree_s1.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 15:21:03 by dfinnis           #+#    #+#             */
-/*   Updated: 2018/11/05 15:21:06 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/16 13:21:54 by dfinnis           #+#    #+#             */
+/*   Updated: 2018/12/16 13:21:55 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strjoinfree_s1(char *s1, char *s2)
 {
-	long	a;
-	int		i;
-	int		n;
+	char	*fresh;
 
-	a = 0;
-	i = 0;
-	n = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-	|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			n = -1;
-		i++;
-	}
-	if (str[i] < '0' || str[i] > '9')
+	if (!s1 || !s2)
 		return (0);
-	while (str[i] >= '0' && str[i] <= '9')
-		a = (a * 10) + (str[i++] - '0');
-	return (a * n);
+	if (!(fresh = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
+		return (NULL);
+	ft_strcpy(fresh, s1);
+	ft_strcat(fresh, s2);
+	if (s1)
+	{
+		free(s1);
+		s1 = NULL;
+	}
+	return (fresh);
 }

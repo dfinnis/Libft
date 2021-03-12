@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atoi_intmax.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 15:21:03 by dfinnis           #+#    #+#             */
-/*   Updated: 2018/11/05 15:21:06 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/26 17:15:52 by dfinnis           #+#    #+#             */
+/*   Updated: 2018/12/26 17:15:53 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+intmax_t	ft_atoi_intmax(const char *str)
 {
-	long	a;
-	int		i;
-	int		n;
+	intmax_t	a;
+	int			i;
+	int			n;
 
 	a = 0;
 	i = 0;

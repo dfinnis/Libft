@@ -5,18 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/06 12:16:47 by dfinnis           #+#    #+#             */
-/*   Updated: 2018/11/06 12:16:50 by dfinnis          ###   ########.fr       */
+/*   Created: 2019/01/07 10:45:41 by dfinnis           #+#    #+#             */
+/*   Updated: 2019/01/07 10:45:45 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 
 int					ft_atoi(const char *str);
+intmax_t			ft_atoi_intmax(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -24,6 +26,9 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 char				*ft_itoa(int n);
+char				*ft_itoa_intmax(intmax_t n);
+char				*ft_itoa_unsigned(uintmax_t n);
+char				*ft_itoa_base(uintmax_t n, int b, char type);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
@@ -87,5 +92,19 @@ void				ft_swap(char *a, char *b);
 char				*ft_strrev(char *str);
 char				*ft_strndup(const char *s1, size_t n);
 char				*ft_strjoinfree(char *s1, char *s2);
+char				*ft_strjoinfree_s1(char *s1, char *s2);
+char				*ft_strjoinfree_s2(char *s1, char *s2);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+int					ft_sqrt(int num);
+int					ft_listlen_int(int **array);
+int					ft_listlen_char(char **array);
+void				ft_2d_int_free(int **array);
+void				ft_2d_char_free(char **array);
+int					get_next_line(const int fd, char **line);
+void				ft_freestr(char *str);
+char				**ft_split_whitespaces(char *str);
+int					ft_isblank(int c);
+void				*ft_calloc(size_t count, size_t size);
+uint32_t			swap_endian(uint32_t before);
+uint64_t			swap_endian64(uint64_t before);
 #endif

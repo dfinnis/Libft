@@ -22,7 +22,15 @@ char	*ft_strjoinfree(char *s1, char *s2)
 		return (NULL);
 	ft_strcpy(fresh, s1);
 	ft_strcat(fresh, s2);
-	free(s1);
-	free(s2);
+	if (s1)
+	{
+		free(s1);
+		s1 = NULL;
+	}
+	if (s2)
+	{
+		free(s2);
+		s2 = NULL;
+	}
 	return (fresh);
 }

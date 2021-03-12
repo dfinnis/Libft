@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_listlen_char.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/07 11:02:22 by dfinnis           #+#    #+#             */
-/*   Updated: 2019/01/07 11:02:29 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/12/01 14:40:57 by dfinnis           #+#    #+#             */
+/*   Updated: 2018/12/01 14:40:58 by dfinnis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlen(const char *s)
+int		ft_listlen_char(char **array)
 {
-	size_t	i;
+	int i;
 
 	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
+	while (array[i])
 		i++;
 	return (i);
 }
