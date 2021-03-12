@@ -100,12 +100,12 @@ SRCS_PF =	initialize.c \
 			ft_printf.c \
 			ft_dprintf.c
 
-SRCS_DIR = srcs/
-SRCS_PRINTF = srcs/ft_printf/
+SRCS_DIR = src/
+SRCS_PRINTF = src/ft_printf/
 OBJS_DIR = objs/
 OBJS_PRINTF = objs/ft_printf/
 
-INC = includes/
+INC = inc/
 HEADER = $(INC)libft.h $(INC)get_next_line.h $(INC)ft_printf.h
 
 SRCS_PATH = $(SRCS:%=$(SRCS_DIR)%)
