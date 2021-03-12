@@ -23,7 +23,7 @@ Include *inc/libft.h* at the top of a C file, then you can use any of the libft 
 
 ### Example
 
-At the root of this repo you'll find an this example *pseudo_cat.c*, which uses our libft functions.
+At the root of this repo you'll find this example *pseudo_cat.c*, which uses our libft functions.
 
 ```c
 #include "inc/libft.h"
