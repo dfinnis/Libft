@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "inc/libft.h"
 #include <fcntl.h>
 
 int main (int ac, char **av)
