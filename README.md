@@ -93,14 +93,17 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **putstr** - Write a string.
 * **putstr_fd** - Write a string to file descriptor.
 
-### Character is
+### Character
 
-* **isascii** - Ascii.
-* **isalpha** - Alphabet.
-* **isdigit** - Number.
-* **isalnum** - Alphabet or Number.
-* **isprint** - Printable.
-* **isblank** - White space.
+* **isascii** - Is ascii.
+* **isalpha** - Is alphabet.
+* **isdigit** - Is number.
+* **isalnum** - Is alphabet or Number.
+* **isprint** - Is printable.
+* **isblank** - Is white space.
+* **tolower** - Convert case to lower.
+* **toupper** - Convert case to upper.
+* **swap** - Swap characters.
 
 ### String
 
@@ -133,8 +136,6 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **strrev** - Reverse string.
 * **strndup** - Duplicate *n* bytes of string.
 * **strlcpy** - Copy a string.
-* **tolower** - Convert case to lower.
-* **toupper** - Convert case to upper.
 * **split_whitespaces** - Split a string using whitespace as delimiter, return as list.
 
 ### Free
@@ -157,9 +158,8 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **listlen_int** - Measure length of list of integers.
 * **listlen_char** - Measure length of list of characters.
 
-### Swap
+### Endianness
 
-* **swap** - Swap characters.
 * **swap_endian** - Swap little <-> big endian, 32bit.
 * **swap_endian64** - Swap little <-> big endian, 64bit.
 
