@@ -26,7 +26,7 @@ Include *ft_printf/ft_printf.h* at the top of a C file, then you can use any of 
 Let's create at the root of this repo an example *pseudo_cat.c*, which uses our libft functions.
 
 ```c
-#include ""libft.h""
+#include "libft.h"
 #include <fcntl.h>
 
 int main (int ac, char **av)
