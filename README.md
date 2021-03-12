@@ -63,113 +63,113 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 
 ### Memory
 
-* bzero
-* memalloc
-* memccpy
-* memchr
-* memcmp
-* memcpy
-* memdel
-* memmove
-* memset
-* calloc
+* **bzero** - 
+* **memalloc** - 
+* **memccpy** - 
+* **memchr** - 
+* **memcmp** - 
+* **memcpy** - 
+* **memdel** - 
+* **memmove** - 
+* **memset** - 
+* **calloc** - 
 
 ### Convert number
 
-* atoi
-* atoi_intmax
-* itoa
-* itoa_intmax
-* itoa_unsigned
-* itoa_base
-* sqrt
+* **atoi** - 
+* **atoi_intmax** - 
+* **itoa** - 
+* **itoa_intmax** - 
+* **itoa_unsigned** - 
+* **itoa_base** - 
+* **sqrt** - 
 
 ### Put
 
-* putchar
-* putchar_fd
-* putendl
-* putendl_fd
-* putnbr
-* putnbr_fd
-* putstr
-* putstr_fd
+* **putchar** - 
+* **putchar_fd** - 
+* **putendl** - 
+* **putendl_fd** - 
+* **putnbr** - 
+* **putnbr_fd** - 
+* **putstr** - 
+* **putstr_fd** - 
 
 ### Character is
 
-* isascii
-* isalpha
-* isdigit
-* isalnum
-* isprint
-* isblank
+* **isascii** - 
+* **isalpha** - 
+* **isdigit** - 
+* **isalnum** - 
+* **isprint** - 
+* **isblank** - 
 
 ### String
 
-* strcat
-* strchr
-* strclr
-* strcmp
-* strcpy
-* strdel
-* strdup
-* strequ
-* striter
-* striteri
-* strjoin
-* strlcat
-* strlen
-* strmap
-* strmapi
-* strncat
-* strncmp
-* strncpy
-* strnequ
-* strnew
-* strnstr
-* strrchr
-* strsplit
-* strstr
-* strsub
-* strtrim
-* strrev
-* strndup
-* strlcpy
-* tolower
-* toupper
-* split_whitespaces
+* **strcat** - 
+* **strchr** - 
+* **strclr** - 
+* **strcmp** - 
+* **strcpy** - 
+* **strdel** - 
+* **strdup** - 
+* **strequ** - 
+* **striter** - 
+* **striteri** - 
+* **strjoin** - 
+* **strlcat** - 
+* **strlen** - 
+* **strmap** - 
+* **strmapi** - 
+* **strncat** - 
+* **strncmp** - 
+* **strncpy** - 
+* **strnequ** - 
+* **strnew** - 
+* **strnstr** - 
+* **strrchr** - 
+* **strsplit** - 
+* **strstr** - 
+* **strsub** - 
+* **strtrim** - 
+* **strrev** - 
+* **strndup** - 
+* **strlcpy** - 
+* **tolower** - 
+* **toupper** - 
+* **split_whitespaces** - 
 
 ### Free
 
-* freestr
-* strjoinfree
-* strjoinfree_s1
-* strjoinfree_s2
-* 2d_int_free
-* 2d_char_free
+* **freestr** - 
+* **strjoinfree** - 
+* **strjoinfree_s1** - 
+* **strjoinfree_s2** - 
+* **2d_int_free** - 
+* **2d_char_free** - 
 
 ### List
 
-* lstnew
-* lstdelone
-* lstdel
-* lstadd
-* lstiter
-* lstmap
-* listlen_int
-* listlen_char
+* **lstnew** - 
+* **lstdelone** - 
+* **lstdel** - 
+* **lstadd** - 
+* **lstiter** - 
+* **lstmap** - 
+* **listlen_int** - 
+* **listlen_char** - 
 
 ### Swap
 
-* swap
-* swap_endian
-* swap_endian64
+* **swap** - 
+* **swap_endian** - 
+* **swap_endian64** - 
 
 ### Further projects
 
-* get_next_line
-* ft_printf
-* ft_dprintf
+* **get_next_line** - 
+* **ft_printf** - 
+* **ft_dprintf** - 
 
 
 ## Rigor
