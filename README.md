@@ -122,13 +122,13 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **strlen** - Measure string length.
 * **strmap** - Apply function *f* to each character of a malloced string.
 * **strmapi** - Apply function *f* to each character of a malloced string by index.
-* **strncat** - Concatenate  *n* bytes of strings.
-* **strncmp** - Compare  *n* bytes of strings.
-* **strncpy** - Copy  *n* bytes of strings.
-* **strnequ** - Compare  *n* bytes of strings lexicographically.
+* **strncat** - Concatenate strings until *n* bytes.
+* **strncmp** - Compare *n* bytes of strings.
+* **strncpy** - Copy *n* bytes a string.
+* **strnequ** - Compare *n* bytes of strings lexicographically.
 * **strnew** - Allocate fresh string.
 * **strnstr** - Locate a substring in a string.
-* **strrchr** - Locate character in string.
+* **strrchr** - Locate a character in string.
 * **strsplit** - Split a string using character *c* as delimiter, return as list.
 * **strstr** - Locate a substring in a string.
 * **strsub** - Create substring.
