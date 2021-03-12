@@ -4,7 +4,7 @@ My personal C library.
 
 Many recreated C Standard Library functions.
 
-Many additional functions used in further C projects ([Push_swap](https://github.com/dfinnis/Push_swap), [Lem_in](https://github.com/dfinnis/Lem_in), [Corewar](https://github.com/dfinnis/Corewar), & [md5](https://github.com/dfinnis/md5))
+Many additional functions used in further C projects ([Push_swap](https://github.com/dfinnis/Push_swap), [Lem_in](https://github.com/dfinnis/Lem_in), [Corewar](https://github.com/dfinnis/Corewar), & [md5](https://github.com/dfinnis/md5)).
 
 At 42, using standard library functions (e.g. *atoi*) is forbidden, so students must create their own libft library from scratch.
 
