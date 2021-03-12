@@ -78,12 +78,10 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 
 * atoi
 * atoi_intmax
-
 * itoa
 * itoa_intmax
 * itoa_unsigned
 * itoa_base
-
 * sqrt
 
 ### Put
@@ -137,10 +135,8 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * strrev
 * strndup
 * strlcpy
-
 * tolower
 * toupper
-
 * split_whitespaces
 
 ### Free
@@ -149,7 +145,6 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * strjoinfree
 * strjoinfree_s1
 * strjoinfree_s2
-
 * 2d_int_free
 * 2d_char_free
 
@@ -161,21 +156,18 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * lstadd
 * lstiter
 * lstmap
-
 * listlen_int
 * listlen_char
 
 ### Swap
 
 * swap
-
 * swap_endian
 * swap_endian64
 
 ### Further projects
 
 * get_next_line
-
 * ft_printf
 * ft_dprintf
 
