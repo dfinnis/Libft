@@ -19,14 +19,14 @@ Make to compile.
 
 ```make; make clean```
 
-Include *libft.h* at the top of a C file, then you can use any of the libft functions.
+Include *inc/libft.h* at the top of a C file, then you can use any of the libft functions.
 
 ### Example
 
 At the root of this repo an example *pseudo_cat.c*, which uses our libft functions.
 
 ```c
-#include "libft.h"
+#include "inc/libft.h"
 #include <fcntl.h>
 
 int main (int ac, char **av)
