@@ -26,7 +26,7 @@ Include *ft_printf/ft_printf.h* at the top of a C file, then you can use any of 
 Let's create at the root of this repo an example *pseudo_cat.c*, which uses our libft functions.
 
 ```c
-#include "ft_printf/ft_printf.h"
+#include ""libft.h""
 #include <fcntl.h>
 
 int main (int ac, char **av)
@@ -46,9 +46,9 @@ int main (int ac, char **av)
 }
 ```
 
-Compile *pseudo_cat* with ft_printf/libftprintf.a includes.
+Compile *pseudo_cat* with libft.a includes.
 
-```gcc pseudo_cat.c ft_printf/libftprintf.a -I includes -o pseudo_cat```
+```gcc pseudo_cat.c libft.a -I includes -o pseudo_cat```
 
 *pseudo_cat* behaves similarly to *cat*.
 
