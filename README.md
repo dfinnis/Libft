@@ -98,7 +98,7 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 * **isascii** - Is ascii.
 * **isalpha** - Is alphabet.
 * **isdigit** - Is number.
-* **isalnum** - Is alphabet or Number.
+* **isalnum** - Is alphabet or number.
 * **isprint** - Is printable.
 * **isblank** - Is white space.
 * **tolower** - Convert case to lower.
