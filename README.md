@@ -63,113 +63,113 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 
 ### Memory
 
-* **bzero** - 
-* **memalloc** - 
-* **memccpy** - 
-* **memchr** - 
-* **memcmp** - 
-* **memcpy** - 
-* **memdel** - 
-* **memmove** - 
-* **memset** - 
-* **calloc** - 
+* **bzero** - Write zeroed bytes to a string.
+* **memalloc** - Allocate with malloc and returns a “fresh” memory area.
+* **memccpy** - Copy string *src* to string *dst*, until character *c* occurs in *src*.
+* **memchr** - Locate the first occurrence of a character in a string.
+* **memcmp** - Compare strings.
+* **memcpy** - Copy from *src* to *dst*.
+* **memdel** - Free a memory area.
+* **memmove** - Copy from string *src* to string *dst*.
+* **memset** - Write len bytes of a value to a string.
+* **calloc** - Allocate and zero memory.
 
 ### Convert number
 
-* **atoi** - 
-* **atoi_intmax** - 
-* **itoa** - 
-* **itoa_intmax** - 
-* **itoa_unsigned** - 
-* **itoa_base** - 
-* **sqrt** - 
+* **atoi** - Ascii to int.
+* **atoi_intmax** - Larger numbers.
+* **itoa** - Int to ascii.
+* **itoa_intmax** - Larger numbers.
+* **itoa_unsigned** - Unsigned numbers.
+* **itoa_base** - Specify base.
+* **sqrt** - Square root.
 
 ### Put
 
-* **putchar** - 
-* **putchar_fd** - 
-* **putendl** - 
-* **putendl_fd** - 
-* **putnbr** - 
-* **putnbr_fd** - 
-* **putstr** - 
-* **putstr_fd** - 
+* **putchar** - Write a character.
+* **putchar_fd** - Write a character to file descriptor.
+* **putendl** - Write a string to stdout followed by ’\n’.
+* **putendl_fd** - Write a string to file descriptor followed by ’\n’.
+* **putnbr** - Write an integer.
+* **putnbr_fd** - Write an integer to file descriptor.
+* **putstr** - Write a string.
+* **putstr_fd** - Write a string to file descriptor.
 
 ### Character is
 
-* **isascii** - 
-* **isalpha** - 
-* **isdigit** - 
-* **isalnum** - 
-* **isprint** - 
-* **isblank** - 
+* **isascii** - Ascii.
+* **isalpha** - Alphabet.
+* **isdigit** - Number.
+* **isalnum** - Alphabet or Number.
+* **isprint** - Printable.
+* **isblank** - White space.
 
 ### String
 
-* **strcat** - 
-* **strchr** - 
-* **strclr** - 
-* **strcmp** - 
-* **strcpy** - 
-* **strdel** - 
-* **strdup** - 
-* **strequ** - 
-* **striter** - 
-* **striteri** - 
-* **strjoin** - 
-* **strlcat** - 
-* **strlen** - 
-* **strmap** - 
-* **strmapi** - 
-* **strncat** - 
-* **strncmp** - 
-* **strncpy** - 
-* **strnequ** - 
-* **strnew** - 
-* **strnstr** - 
-* **strrchr** - 
-* **strsplit** - 
-* **strstr** - 
-* **strsub** - 
-* **strtrim** - 
-* **strrev** - 
-* **strndup** - 
-* **strlcpy** - 
-* **tolower** - 
-* **toupper** - 
-* **split_whitespaces** - 
+* **strcat** - Concatenate strings.
+* **strchr** - Locate a character in string.
+* **strclr** - Set every character of string to ’\0’.
+* **strcmp** - Compare strings.
+* **strcpy** - Copy a string.
+* **strdel** - Free a string.
+* **strdup** - Duplicate a string.
+* **strequ** - Compare strings lexicographically. Return 1 if identical, 0 if different.
+* **striter** - Apply function *f* to each character of a string.
+* **striteri** - Apply function *f* to each character of a string by index.
+* **strjoin** - Join strings.
+* **strlcat** - Concatenate strings.
+* **strlen** - Measure string length.
+* **strmap** - Apply function *f* to each character of a malloced string.
+* **strmapi** - Apply function *f* to each character of a malloced string by index.
+* **strncat** - Concatenate  *n* bytes of strings.
+* **strncmp** - Compare  *n* bytes of strings.
+* **strncpy** - Copy  *n* bytes of strings.
+* **strnequ** - Compare  *n* bytes of strings lexicographically.
+* **strnew** - Allocate fresh string.
+* **strnstr** - Locate a substring in a string.
+* **strrchr** - Locate character in string.
+* **strsplit** - Split a string using character *c* as delimiter, return as list.
+* **strstr** - Locate a substring in a string.
+* **strsub** - Create substring.
+* **strtrim** - Trim whitespace.
+* **strrev** - Reverse string.
+* **strndup** - Duplicate *n* bytes of string.
+* **strlcpy** - Copy a string.
+* **tolower** - Convert case to lower
+* **toupper** - Convert case to upper
+* **split_whitespaces** - Split a string using whitespace as delimiter, return as list.
 
 ### Free
 
-* **freestr** - 
-* **strjoinfree** - 
-* **strjoinfree_s1** - 
-* **strjoinfree_s2** - 
-* **2d_int_free** - 
-* **2d_char_free** - 
+* **freestr** - Free a string.
+* **strjoinfree** - Join strings, free original strings.
+* **strjoinfree_s1** - Join strings, free string 1.
+* **strjoinfree_s2** - Join strings, free string 2.
+* **2d_int_free** - Free 2d int array.
+* **2d_char_free** - Free 2d char array.
 
 ### List
 
-* **lstnew** - 
-* **lstdelone** - 
-* **lstdel** - 
-* **lstadd** - 
-* **lstiter** - 
-* **lstmap** - 
-* **listlen_int** - 
-* **listlen_char** - 
+* **lstnew** - New list element.
+* **lstdelone** - Delete list element.
+* **lstdel** - Delete entire list.
+* **lstadd** - Add new element to the beginning of list.
+* **lstiter** - Iterate list and apply function *f* to each element.
+* **lstmap** - Iterate list and apply function *f* to each element, return new malloced list.
+* **listlen_int** - Measure length of list of integers.
+* **listlen_char** - Measure length of list of characters.
 
 ### Swap
 
-* **swap** - 
-* **swap_endian** - 
-* **swap_endian64** - 
+* **swap** - Swap characters.
+* **swap_endian** - Swap little <-> big endian, 32bit
+* **swap_endian64** - Swap little <-> big endian, 64bit
 
 ### Further projects
 
-* **get_next_line** - 
-* **ft_printf** - 
-* **ft_dprintf** - 
+* **get_next_line** - Read a file descriptor one line at a time.
+* **ft_printf** - Printf() recoded.
+* **ft_dprintf** - Print to file descriptor.
 
 
 ## Rigor
