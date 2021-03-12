@@ -162,8 +162,8 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 ### Swap
 
 * **swap** - Swap characters.
-* **swap_endian** - Swap little <-> big endian, 32bit
-* **swap_endian64** - Swap little <-> big endian, 64bit
+* **swap_endian** - Swap little <-> big endian, 32bit.
+* **swap_endian64** - Swap little <-> big endian, 64bit.
 
 ### Further projects
 
