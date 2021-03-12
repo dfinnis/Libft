@@ -63,122 +63,122 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 
 ### Memory
 
-bzero
-memalloc
-memccpy
-memchr
-memcmp
-memcpy
-memdel
-memmove
-memset
+* bzero
+* memalloc
+* memccpy
+* memchr
+* memcmp
+* memcpy
+* memdel
+* memmove
+* memset
 
-calloc
+* calloc
 
 ### Convert number
 
-atoi
-atoi_intmax
+* atoi
+* atoi_intmax
 
-itoa
-itoa_intmax
-itoa_unsigned
-itoa_base
+* itoa
+* itoa_intmax
+* itoa_unsigned
+* itoa_base
 
-sqrt
+* sqrt
 
 ### Put
 
-putchar
-putchar_fd
-putendl
-putendl_fd
-putnbr
-putnbr_fd
-putstr
-putstr_fd
+* putchar
+* putchar_fd
+* putendl
+* putendl_fd
+* putnbr
+* putnbr_fd
+* putstr
+* putstr_fd
 
 ### Character is
 
-isascii
-isalpha
-isdigit
-isalnum
-isprint
-isblank
+* isascii
+* isalpha
+* isdigit
+* isalnum
+* isprint
+* isblank
 
 ### String
 
-strcat
-strchr
-strclr
-strcmp
-strcpy
-strdel
-strdup
-strequ
-striter
-striteri
-strjoin
-strlcat
-strlen
-strmap
-strmapi
-strncat
-strncmp
-strncpy
-strnequ
-strnew
-strnstr
-strrchr
-strsplit
-strstr
-strsub
-strtrim
-strrev
-strndup
-strlcpy
+* strcat
+* strchr
+* strclr
+* strcmp
+* strcpy
+* strdel
+* strdup
+* strequ
+* striter
+* striteri
+* strjoin
+* strlcat
+* strlen
+* strmap
+* strmapi
+* strncat
+* strncmp
+* strncpy
+* strnequ
+* strnew
+* strnstr
+* strrchr
+* strsplit
+* strstr
+* strsub
+* strtrim
+* strrev
+* strndup
+* strlcpy
 
-tolower
-toupper
+* tolower
+* toupper
 
-split_whitespaces
+* split_whitespaces
 
-## Free
+### Free
 
-freestr
-strjoinfree
-strjoinfree_s1
-strjoinfree_s2
+* freestr
+* strjoinfree
+* strjoinfree_s1
+* strjoinfree_s2
 
-2d_int_free
-2d_char_free
+* 2d_int_free
+* 2d_char_free
 
 ### List
 
-lstnew
-lstdelone
-lstdel
-lstadd
-lstiter
-lstmap
+* lstnew
+* lstdelone
+* lstdel
+* lstadd
+* lstiter
+* lstmap
 
-listlen_int
-listlen_char
+* listlen_int
+* listlen_char
 
 ### Swap
 
-swap
+* swap
 
-swap_endian
-swap_endian64
+* swap_endian
+* swap_endian64
 
 ### Further projects
 
-get_next_line
+* get_next_line
 
-ft_printf
-ft_dprintf
+* ft_printf
+* ft_dprintf
 
 
 ## Rigor
