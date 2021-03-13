@@ -15,44 +15,25 @@ First clone this repo.
 
 ```git clone https://github.com/dfinnis/Libft.git; cd Libft```
 
-Make to compile.
+Make to compile *libft.a*.
 
 ```make```
 
-Include *inc/libft.h* at the top of a C file, then you can use any of the libft functions.
+Include *inc/libft.h* at the top of a C file, then you can use any of my libft functions.
 
 ### Example
 
-At the root of this repo you'll find this example *pseudo_cat.c*, which uses my libft functions.
+At the root of this repo you'll find an example main *pseudo_cat.c*. *pseudo_cat.c* imports and uses my libft functions (*get_next_line* & *ft_printf* which use many other libft functions) to approximate the behaviour of *cat*.
 
-```c
-#include "inc/libft.h"
-#include <fcntl.h>
-
-int main (int ac, char **av)
-{
-    char *str;
-    int fd;
-
-    fd = open(av[1], O_RDONLY);
-    while (get_next_line(fd, &str) == 1)
-    {
-        ft_printf("%s\n", str);
-        free(str);
-    }
-    free(str);
-    close (fd);
-    return (0);
-}
-```
-
-Compile *pseudo_cat* with libft.a includes.
+Compile *pseudo_cat* with *libft.a* includes.
 
 ```gcc pseudo_cat.c libft.a -I includes -o pseudo_cat```
 
-*pseudo_cat* behaves similarly to *cat*.
+Run *pseudo_cat* with file as argument, just like *cat*.
 
-<img src="https://github.com/dfinnis/Libft/blob/master/img/cat.png" width="40%">
+```./pseudo_cat author; cat author```
+
+<img src="https://github.com/dfinnis/Libft/blob/master/img/cat.png" width="470">
 
 
 ## Functions
