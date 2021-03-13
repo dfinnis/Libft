@@ -19,7 +19,8 @@ Make to compile *libft.a*.
 
 ```make```
 
-Include *inc/libft.h* at the top of a C file, then you can use any of my libft functions.
+Include *inc/libft.h* at the top of a C file, and compile with *libft.a*. Then you can use any of my libft functions.
+
 
 ### Example
 
