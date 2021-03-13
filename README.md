@@ -24,7 +24,7 @@ Include *inc/libft.h* at the top of a C file, and compile with *libft.a*. Then y
 
 ### Example
 
-At the root of this repo you'll find an example main *pseudo_cat.c*. *pseudo_cat.c* imports and uses my libft functions (*get_next_line* & *ft_printf* which use many other libft functions) to approximate the behaviour of *cat*.
+At the root of this repo you'll find an example main *pseudo_cat.c*. *pseudo_cat.c* uses my libft functions (*get_next_line* & *ft_printf* which use many other libft functions) to approximate the behaviour of *cat*.
 
 Compile *pseudo_cat* with *libft.a* includes.
 
