@@ -62,13 +62,13 @@ See the [subject](https://github.com/dfinnis/Libft/blob/master/subject.pdf) for 
 ### Memory
 
 * **bzero** - Write zeroed bytes to a string.
-* **memalloc** - Allocate with malloc and returns a “fresh” memory area.
-* **memccpy** - Copy string *src* to string *dst*, until character *c* occurs in *src*.
+* **memalloc** - Allocate with malloc and return a “fresh” memory area.
+* **memccpy** - Copy a string, until character *c*.
 * **memchr** - Locate the first occurrence of a character in a string.
 * **memcmp** - Compare strings.
-* **memcpy** - Copy from *src* to *dst*.
-* **memdel** - Free a memory area.
-* **memmove** - Copy from string *src* to string *dst*.
+* **memcpy** - Copy memory.
+* **memdel** - Free memory.
+* **memmove** - Copy a byte string.
 * **memset** - Write len bytes of a value to a string.
 * **calloc** - Allocate and zero memory.
 
