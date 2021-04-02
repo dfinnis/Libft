@@ -11,12 +11,10 @@ At 42, using standard library functions (e.g. *atoi*) is forbidden, so students 
 
 ## Getting Started
 
-First clone this repo.
-
+First clone this repo. <br>
 ```git clone https://github.com/dfinnis/Libft.git; cd Libft```
 
-Make to compile *libft.a*.
-
+Make to compile *libft.a*. <br>
 ```make```
 
 Include *inc/libft.h* at the top of a C file, and compile with *libft.a*. Then you can use any of my libft functions.
@@ -26,12 +24,10 @@ Include *inc/libft.h* at the top of a C file, and compile with *libft.a*. Then y
 
 At the root of this repo you'll find an example main *pseudo_cat.c*. *pseudo_cat.c* uses my libft functions (*get_next_line* & *ft_printf* which use many other libft functions) to approximate the behaviour of *cat*.
 
-Compile *pseudo_cat* with *libft.a* includes.
-
+Compile *pseudo_cat* with *libft.a* includes. <br>
 ```gcc pseudo_cat.c libft.a -I includes -o pseudo_cat```
 
-Run *pseudo_cat* with file as argument, just like *cat*.
-
+Run *pseudo_cat* with file as argument, just like *cat*. <br>
 ```./pseudo_cat author; cat author```
 
 <img src="https://github.com/dfinnis/Libft/blob/master/img/cat.png" width="470">
