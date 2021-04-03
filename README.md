@@ -6,7 +6,7 @@ Many recreated C Standard Library functions, & many additional functions used in
 
 At 42, using standard library functions (e.g. *atoi*) is forbidden, so students must create their own libft library from scratch.
 
-#### Final Score 125/100
+*Final Score 125/100*
 
 
 ## Getting Started
